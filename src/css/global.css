@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-size: 12px;
+    list-style: none;
+    font-family: "shabnam";
+}
+
+@font-face {
+    font-family: "shabnam";
+    src: url("./src/font/Shabnam.woff") format("woff");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #aaaaaa;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff0000;
+  }
+
+/* header */
+
+.header-container{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.header-container .header{
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container .header .box,
+.header-container .header .logo{
+  width: 15%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-container .header .box .search{
+  width: 25%;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container .header .box .button{
+  width: 70%;
+  height: 50px;
+  border: 1px solid #ff0000;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background: none;
+}
+
+.header-container .header .logo img{
+  width: 100%;
+  height: 70px;
+  border: 1px solid black;
+}
+
+.header-container .header .menu{
+  width: 70%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.header-container .header .menu li{
+  width: 80px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+}
